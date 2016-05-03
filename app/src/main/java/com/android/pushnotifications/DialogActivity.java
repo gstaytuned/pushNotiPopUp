@@ -18,15 +18,9 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 
 public class DialogActivity extends AppCompatActivity {
 
-    private static final String LOG_TAG = "SMSReceiver";
-    public static final int NOTIFICATION_ID_RECEIVER = 0x1221;
-    static final String ACTION = "android.provider.Telephony.SMS_RECEIVER";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
         displayAlert(DataManager.getInstance().getServerMessage());
 
     }
@@ -37,12 +31,13 @@ public class DialogActivity extends AppCompatActivity {
                 false).setPositiveButton("Yes",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
+                        Intent i = new Intent(DialogActivity.this, MainActivity.class);
+                        startActivity(i);
                     }
                 }).setNegativeButton("No",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
+                        finish();
                     }
                 });
         AlertDialog alert = builder.create();
