@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "584429418665",
+    "project_id": "pushnotifications-160a0"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584429418665:android:41640d1572678b3f",
+        "android_client_info": {
+          "package_name": "com.android.pushnotifications"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA47DUeiri8bb9Qz69hGWnZjoiHAFV9_NE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
