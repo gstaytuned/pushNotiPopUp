@@ -49,7 +49,7 @@ public class GCMPushReceiverService extends GcmListenerService {
 //        notificationManager.notify(0, noBuilder.build()); //0 = ID of notification
         Intent i = new Intent(getApplicationContext(), DialogActivity.class);
 
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_SINGLE_TOP|Intent.FLAG_ACTIVITY_CLEAR_TOP);
         getApplicationContext().startActivity(i);
     }
 }
